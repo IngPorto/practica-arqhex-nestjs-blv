@@ -5,7 +5,7 @@ import { CoreModule } from './core/core.module';
 import { InfraestructureModule } from './infraestructure/infraestructure.module';
 
 @Module({
-  imports: [CoreModule, InfraestructureModule],
+  imports: [ InfraestructureModule],
   controllers: [AppController],
   providers: [AppService],
 })

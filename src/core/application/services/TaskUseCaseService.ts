@@ -9,7 +9,7 @@ export class TaskUseCaseService implements TaskUseCase {
 
   async makeMyTask(newTask: CreateTaskDTO): Promise<Task> {
     const id = Math.floor((1 + Math.random()) * 0x10000)
-      .toString(11)
+      .toString(16)
       .substring(1);
 
     const task = Task.create(
